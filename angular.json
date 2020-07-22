@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SAJIUT"
+    }
+  },
+  "defaultProject": "SAJIUT",
+  "cli": {
+    "analytics": false
+  }
 }

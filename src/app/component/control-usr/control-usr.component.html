@@ -1,0 +1,32 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Matricula</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido Paterno</th>
+            <th scope="col">Apellido Matero</th>
+            <th scope="col">Contraseña</th>
+            <th scope="col">Estatus</th>
+            <th scope="col">email</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            
+        </tr>
+    </thead>
+    <tbody *ngFor="let usr of usuarios[0]">
+        <tr>
+            <th scope="row">{{usr.id_usuario}}</th>
+            <td>{{usr.matricula}}</td>
+            <td>{{usr.nombre}}</td>
+            <td>{{usr.apellido_paterno}}</td>
+            <td>{{usr.apellido_materno}}</td>
+            <td>{{usr.contrasenia}}</td>
+            <td>{{usr.estatus}}</td>
+            <td>{{usr.email}}</td>
+            <td><button type="button" class="btn btn-primary">Actualizar</button></td>
+            <td><button type="button" class="btn btn-danger">activar/desactivar</button></td>
+        </tr>
+    </tbody>
+</table>
